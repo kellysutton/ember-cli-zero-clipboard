@@ -33,3 +33,8 @@ test('it has a default title', function(assert) {
   this.render(hbs`{{zero-clipboard}}`);
   assert.equal(this.$('.ember-view').attr('title'), "Copy to clipboard");
 });
+
+test('it sets the data-clipboard-test property based on a passed in text value', function(assert) {
+  this.render(hbs`{{zero-clipboard text="Some text to copy"}}`);
+  assert.equal(this.$('.ember-view').attr('data-clipboard-text'), "Some text to copy");
+});
