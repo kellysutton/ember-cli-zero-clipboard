@@ -1,5 +1,7 @@
 # Ember Zero Clipboard
 
+[![Build Status](https://travis-ci.org/kellysutton/ember-cli-zero-clipboard.png?branch=master)](https://travis-ci.org/kellysutton/ember-cli-zero-clipboard)
+
 This is an Ember CLI addon for adding a [Zero Clipboard](http://zeroclipboard.org/) component.
 
 ### Installation
@@ -16,7 +18,7 @@ In your handlebars template just do:
 {{zero-clipboard text=TEXT label=LABEL}}
 ```
 
-or 
+or
 
 ```
 {{zero-clipboard cbTarget=TARGET_ELEMENT_ID label=LABEL}}
