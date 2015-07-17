@@ -8,7 +8,7 @@ module.exports = {
     this.app = app;
     this._super.included(app);
 
-    app.import('vendor/zeroclipboard/dist/ZeroClipboard.js');
-		app.import('vendor/zeroclipboard/dist/ZeroClipboard.swf', {destDir: 'assets'});
+    app.import(app.bowerDirectory + '/zeroclipboard/dist/ZeroClipboard.js');
+    app.import(app.bowerDirectory + '/zeroclipboard/dist/ZeroClipboard.swf', { destDir: 'assets' });
   }
 };
